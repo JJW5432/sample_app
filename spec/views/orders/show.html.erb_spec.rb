@@ -6,10 +6,10 @@ describe "orders/show" do
       :name => "Name",
       :bunk => "Bunk",
       :white => 1,
-      :orange => 2,
-      :blue => 3,
-      :paid => "",
-      :alternate => "Alternate"
+      :blue => 2,
+      :orange => 3,
+      :alternate => "Alternate",
+      :paid => 4
     ))
   end
 
@@ -21,7 +21,7 @@ describe "orders/show" do
     rendered.should match(/1/)
     rendered.should match(/2/)
     rendered.should match(/3/)
-    rendered.should match(//)
     rendered.should match(/Alternate/)
+    rendered.should match(/4/)
   end
 end
