@@ -7,6 +7,8 @@ SampleApp::Application.routes.draw do
 
   get "static_pages/contact"
 
+  get "discs"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
